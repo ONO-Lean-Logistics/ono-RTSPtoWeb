@@ -37,15 +37,6 @@
                 <div class="custom-dropdown-item with-img" onclick="changeBackground('back')">
                   <img src="/../static/img/back.jpg" />
                 </div>
-                <div class="custom-dropdown-item with-img" onclick="changeBackground('red')">
-                  <img src="/../static/img/red.jpg" />
-                </div>
-                <div class="custom-dropdown-item with-img" onclick="changeBackground('green')">
-                  <img src="/../static/img/green.jpg" />
-                </div>
-                <div class="custom-dropdown-item with-img" onclick="changeBackground('white')">
-                  <img src="/../static/img/white.jpg" />
-                </div>
               </div>
             </li>
             {{end}}
@@ -57,27 +48,6 @@
 	        </div>
                 <div class="custom-dropdown-item grid-maker" grid="4" onclick="gridMaker(4)">
                   2 x 2
-                </div>
-                <div class="custom-dropdown-item grid-maker" grid="6" onclick="gridMaker(6)">
-                  3 x 2
-                </div>
-                <div class="custom-dropdown-item grid-maker" grid="9" onclick="gridMaker(9)">
-                  3 x 3
-                </div>
-                <div class="custom-dropdown-item grid-maker" grid="12" onclick="gridMaker(12)">
-                  4 x 3
-                </div>
-                <div class="custom-dropdown-item grid-maker" grid="16" onclick="gridMaker(16)">
-                  4 x 4
-                </div>
-                <div class="custom-dropdown-item grid-maker" grid="25" onclick="gridMaker(25)">
-                  5 x 5
-                </div>
-                <div class="custom-dropdown-item grid-maker" grid="36" onclick="gridMaker(36)">
-                  6 x 6
-                </div>
-                <div class="custom-dropdown-item grid-maker" grid="49" onclick="gridMaker(49)">
-                  7 x 7
                 </div>
               </div>
             </li>
@@ -964,15 +934,6 @@
     let back = '/../static/img/';
     localStorage.setItem('backgroundImage', num);
     switch (num) {
-      case 'green':
-        back += 'green.jpg'
-        break;
-      case 'red':
-        back += 'red.jpg'
-        break;
-      case 'white':
-        back += 'white.jpg'
-        break;
       default:
         back += 'back.jpg'
     }
