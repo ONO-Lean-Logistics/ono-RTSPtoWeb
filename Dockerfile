@@ -17,11 +17,11 @@ FROM alpine:3.21
 
 WORKDIR /app
 
-RUN mkdir -p /app/rtsp/
+RUN mkdir -p /config
 COPY --from=builder /go/src/app/rtsp /app/rtsp
 COPY --from=builder /go/src/app/web /app/web
 
 ENV GO111MODULE="on"
 ENV GIN_MODE="release"
 
-CMD ["./rtsp", "--config=/app/rtsp/config.json"]
+CMD ["./rtsp", "--config=/config/config.json"]
