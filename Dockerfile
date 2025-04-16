@@ -24,4 +24,4 @@ COPY --from=builder /go/src/app/web /app/web
 ENV GO111MODULE="on"
 ENV GIN_MODE="release"
 
-CMD ["./rtsp-web", "--config=/rtsp/config.json"]
+CMD ["./rtsp", "--config=/rtsp/config.json"]
