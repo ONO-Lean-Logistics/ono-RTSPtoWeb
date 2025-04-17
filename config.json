@@ -26,19 +26,24 @@
   },
   "streams": {
     "demo1": {
-      "name": "cameras",
+      "name": "demo1",
       "channels": {
         "0": {
           "name": "ONO1",
-          "url": "rtsp://192.168.1.68:554/ch01/1",
+          "url": "rtsp://webcamIp:rtspPort/camConfig",
           "on_demand": true,
           "debug": false,
           "audio": true,
           "status": 0
-        },
-        "1": {
+        }
+      }
+    },
+    "demo2" : {
+      "name": "demo2",
+      "channels": {
+        "0": {
           "name": "ONO2",
-          "url": "rtsp://192.168.1.72:554/ch01/1",
+          "url": "rtsp://webcamIp:rtspPort/camConfig",
           "on_demand": true,
           "debug": false,
           "audio": true,
